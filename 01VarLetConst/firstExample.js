@@ -11,4 +11,17 @@ function varTest1() {
     */
 }
 
-varTest1();
+function letTest() {
+    for (let i = 0; i < 10; i++) {
+        console.log(i); // print the values from 0 to 9
+    }
+
+    // console.log(i); // Throw a reference error as i is not in scope outside the braces
+
+    /*
+        Let variables are scoped in the braces {}
+    */
+}
+
+// varTest1();
+letTest();
