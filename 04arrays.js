@@ -10,3 +10,7 @@ console.log(array);
 console.log(array[5]);
 
 console.log(array.length);
+
+array[20] = 100;
+console.log(array);
+console.log(array.length);
