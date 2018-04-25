@@ -8,6 +8,6 @@ console.log(typeof z);
 let nanValue = parseInt("a");
 console.log(nanValue);
 
-var result = isNaN(nanValue);
+let result = isNaN(nanValue);
 console.log(result);
 
