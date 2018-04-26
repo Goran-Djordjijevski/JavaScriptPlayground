@@ -22,7 +22,7 @@ switch (hero.toLowerCase()) {
         break;
 }
 
-// ternary operator
+// ternary operator examples
 let first = 1, second = 1;
 let result = (first == second) ? "equal" : "inequal";
 console.log(result);
