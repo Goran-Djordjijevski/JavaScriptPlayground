@@ -1,4 +1,4 @@
-// Create simple function
+// Create simple function sayHi()
 function sayHi() {
     console.log("-----------");
     console.log("Hi!");
