@@ -12,7 +12,7 @@ function timeOut() {
 
 timeOut();
 
-// IIFE
+// IIFE  
 
 (function() {
     console.log("Immediately Invoked Function Expression");
