@@ -19,6 +19,7 @@ let value = car.getPrice();
 console.log(value);
 
 car.printDescription();
+car.getPrice();
 
 let arrayOfObjects = {
     myArray: [
