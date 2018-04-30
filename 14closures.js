@@ -1,3 +1,5 @@
+// Closures
+
 function sayHello(name) {
     return function () {
         console.log("Hi " + name);
