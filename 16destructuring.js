@@ -1,3 +1,4 @@
+// Destructuring array to the variables
 let a, b, c, d, e;
 
 let names = ["goran", "dejan", "ilija", "dragan", "nemanja"];
