@@ -6,8 +6,8 @@ console.log("Anwser: " + z);
 console.log(typeof z);
 
 let nanValue = parseInt("a");
-console.log(nanValue);
+console.log(nanValue); // Result is NaN - Not a Number
 
 let result = isNaN(nanValue);
-console.log(result);
+console.log(result); // Result is true
 
