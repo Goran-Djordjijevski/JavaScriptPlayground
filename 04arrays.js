@@ -11,6 +11,10 @@ console.log(array[5]);
 
 console.log(array.length);
 
-array[20] = 100;
+// array[20] = 100;
+array.push(20);
 console.log(array);
 console.log(array.length);
+
+// When you want to add new element to the array use push() method.
+// When you want to remove element from the array use pop() method.
