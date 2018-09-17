@@ -1,28 +1,28 @@
-let counter = (function () {
-    
-    // private stuff
+let counter = (function() {
+
+    // Private fields
     let count = 0;
 
     function print(message) {
-        console.log(message + " ----- " + count);
+        console.log(message + "---" + count);
     }
 
-    // return an object
+    // Return an object
     return {
-        get: function () {
+        get: function() {
             return count;
         },
 
-        set: function (value) {
+        set: function(value) {
             count = value;
         },
 
-        increment: function () {
-            count += 1;
+        increment: function (params) {
+            count++;
             print("After increment: ");
         },
 
-        reset: function () {
+        reset: function() {
             print("Before reset: ");
             count = 0;
             print("After reset: ");
@@ -31,4 +31,11 @@ let counter = (function () {
 
 })();
 
+counter.increment();
+counter.increment();
+counter.increment();
+
+counter.set(7);
 console.log(counter.get());
+
+counter.reset();
