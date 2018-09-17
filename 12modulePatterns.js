@@ -1,4 +1,4 @@
-var counter = (function () {
+let counter = (function () {
     
     // private stuff
     let count = 0;
