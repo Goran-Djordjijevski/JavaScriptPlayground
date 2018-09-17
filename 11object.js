@@ -21,6 +21,9 @@ console.log(value);
 car.printDescription();
 car.getPrice();
 
+car.whatever = "Goran";
+console.log(car.whatever);
+
 let arrayOfObjects = {
     myArray: [
         { d: "this"},
