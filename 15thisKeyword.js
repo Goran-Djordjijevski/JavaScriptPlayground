@@ -8,7 +8,7 @@ var car = {
     },
 
     printDescription: function () {
-        console.log(this.make + " " + this.model);
+        console.log(this.make + " " + this.model); 
     }
 };
 
@@ -16,7 +16,7 @@ function first() {
     return this;
 }
 
-console.log(first() === global);
+console.log(first() === global); // True 
 
 // this is Node's global object
 // because that's where the
@@ -28,7 +28,8 @@ function second() {
     return this;
 }
 
-console.log(second() === undefined);
+console.log(second() === global); // False
+console.log(second() === undefined); // True
 
 // this depends on HOW a function is called
 
@@ -42,16 +43,16 @@ let myObject = {
 // This property is set on the global object
 global.value = "Global object";
 
-function third(name) {
+function third() {
     // returns something different depending on how
     // we call this method
-    return this.value + " " + this.name;
+    return this.value;
 }
 
 // Both call and apply allow you to explicitly set
 // what you want to represent "this". The difference
 // is in how additional arguments to the function are sent.
 
-console.log(third());
-console.log(third.call(myObject, "goran"));
-console.log(third.apply(myObject, ["goran"]));
+console.log(third()); // Result is: Global object
+console.log(third.call(myObject, "goran")); // Result is: My Object
+console.log(third.apply(myObject, ["goran"])); // Result is: My Object
