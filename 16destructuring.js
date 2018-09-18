@@ -5,11 +5,18 @@ let names = ["goran", "dejan", "ilija", "dragan", "nemanja"];
 
 [a, b, c, d, e] = names;
 
+// console.log(a); // goran
+// console.log(b); // dejan
+// console.log(c); // ilija
+// console.log(d); // dragan
+// console.log(e); // nemanja
+
+let others;
+[a, b, ...others] = names; // goran, dejan ['ilija', 'dragan', 'nemanja'];
+
 console.log(a);
 console.log(b);
-console.log(c);
-console.log(d);
-console.log(e);
+console.log(others);
 
 // Destructuring object
 let year, model;
