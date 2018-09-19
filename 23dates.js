@@ -1,4 +1,5 @@
 let today = new Date();
+console.log(today);
 
 let goran = new Date(1987, 7, 23);
 
